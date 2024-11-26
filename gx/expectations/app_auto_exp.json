@@ -1,0 +1,599 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "app_auto_exp",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 100,
+        "min_value": 100
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {},
+            "metric_name": "table.row_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_set",
+      "kwargs": {
+        "column_set": [
+          "iiscon_application_id",
+          "declarant_surname",
+          "sdu_load_date",
+          "declarant_name",
+          "declarant_patronymic",
+          "declarant_iin",
+          "service_id"
+        ],
+        "exact_match": null
+      },
+      "meta": {
+        "profiler_details": {
+          "success_ratio": 1.0
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "declarant_surname"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "declarant_surname"
+            },
+            "metric_name": "column_values.nonnull.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "declarant_name"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "declarant_name"
+            },
+            "metric_name": "column_values.nonnull.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "declarant_patronymic"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "declarant_patronymic"
+            },
+            "metric_name": "column_values.nonnull.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "declarant_iin"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "declarant_iin"
+            },
+            "metric_name": "column_values.nonnull.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "sdu_load_date"
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "sdu_load_date"
+            },
+            "metric_name": "column_values.nonnull.unexpected_count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "declarant_surname",
+        "mostly": 1.0,
+        "value_set": [
+          "5A3AEF534565FEAC8617198B801A7E4980CC191DF17A4D01EB55C7B84B044689",
+          "ACE988D7639812BC7D72338D7E089B7D666667A9A127D8F88467A0D23AC88FBB",
+          "27CD0AFC5E257C18A9D818CC8C17EC30E8A1B44AA30124E13812E56E56507203",
+          "C6E3AC856C9B590F4D9C1577B5760CCBFC9D4EF11FCC9F4B56DBB2C4577811A3",
+          "1F4BBBD597ECCD8F8E1EA99672B975CA54A8D7597AB41662E4FF4143A59F28D3",
+          "1F9CB506C6AD33A5CA8A8DA4A2BEA8CCE2B69AA7EF6E18CE9C21DAAE4397B55F",
+          "6F94244C0F05CE310B4AD4D8F6D6A599BB6C39216760CC5CE53F451EB1591979",
+          "B2B4CAFB86718366C970EA254C481E85EFE5F330D8F701DD23A3E1EE03D9B128",
+          "1C4AE6C1EADA4927CD689C4E5C5528DAA0517DFFE9ADB8432EE92F7EF7303628",
+          "040551787F5A8413C4662E88A946AE0BF4C450CEB43920A70EA3B5BE11B357EF",
+          "C5F9BD4E11EC7AB73B2E8A8974C7FB52EC47D3C466DD9BDF44A853D3E76E08F8",
+          "735A4B340ABB60094AB7E05146D3B3F700BBAEAC506817A7F916C5F902A130F2",
+          "361CFF2DCAF2E6976C22D8A381B3BA3574C143DFF90860D25F0B949AC080CD93",
+          "4EE9CB68BAD1069BBE54103C9FBD957807CDE54A8B4BAC570A9326425D45E7B8",
+          "069C2AB60EC00D1770E96ABB79C34EEB6FA8C9F9AD06380C8BE3FAA969F86005",
+          "02FA92DA5245E3417F24ABF0FD4A808FBF6678B87F4D93D7138A50AA0C35B7DF",
+          "F626D4F062460BF16F82C624399F443209BB8E0617706F5933F72AF22A550FEA",
+          "3A71557879BD1E5C486562AA0497214AE9D7B34473C4F72AE8FBC1C59F2BCF09",
+          "A5C656A9A65665F35997B809C8F800E223E30CC6D063C92B07EFF670C57DB9BF",
+          "654E3B6A67CD490AF3BC24C0280BC900FED8B058C99884A49C4D24EBD5DE7D50",
+          "EA23D7C0E0AABEDC9018A1E360EC58B39BF02FA50AA9A8A5CBCB33395ECF4BFC",
+          "583770387710C26F92860BFDDF7E6299EF8535F07311353707BA88F7E4EE87B4",
+          "527E007E8EE8737132F165EF610BF2914FE651DA07FC3B8B97EC6276AFB67019",
+          "CE8F9338B1E350F65AC06ADFC111C1743924082EC1BB5EA98DA8C29BE6294BCA",
+          "1B5ED4B91B518B5334A0F67D829A714EDFDBD871E7E5CA1218BE90CA0EC4C203",
+          "358DBD31A9ADE6131750D7B0FF67C0A18387E9B7884284B8B3AD197BB7982DF9",
+          "CD6A925220A7E1EF12F9087B28015AA62D383469994DC91E530D0E631515D3B2",
+          "C52FAFE00F6EBBC5D4B6DCF70DFB7EB2C916281DC8D10A2913F9CBA9A0F0401D",
+          "97E1ADB415FE821CF0E983DE0B73445382041581EF1768C3CFD5AD1AA5A2D397",
+          "8A45ACEBB03371586A6374C1AE706AEB7330E63893FDFF6EB1D22EB32C17897E",
+          "7278AC8049867474D950BD63DC7ED00F1E1AE5F296A258A8B54FCC058408173F",
+          "97563B5D33284459B4D96362A2BF8688B78F5D6093DEA4D0C2849B6EAC003599",
+          "E8A972E26BC6A8616557FF3FD6BF6C9C50ED1AF0DC321B2C87DAC829FAA8FB8B",
+          "DFC331F201B9BDE91A49652F021B6B2BC63AA34FC0711D6F6BD428C6928BCBD0",
+          "10CE5949DB2C96923E25B0DD72C3DDB88FC0153CFBCDCB5C82CE8159B1E8259B",
+          "824E96F54C4C1F29AA551F0BC2D40F1370F9DFE68E79D132052486BE3F7A3464"
+        ]
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "declarant_surname"
+            },
+            "metric_name": "column.distinct_values",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1,
+          "parse_strings_as_datetimes": false
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_unique_value_count_to_be_between",
+      "kwargs": {
+        "column": "declarant_surname",
+        "max_value": 36,
+        "min_value": 36,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "declarant_surname"
+            },
+            "metric_name": "column.distinct_values.count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "declarant_surname",
+        "max_value": 0.36,
+        "min_value": 0.36,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "declarant_surname"
+            },
+            "metric_name": "column.unique_proportion",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "declarant_name",
+        "mostly": 1.0,
+        "value_set": [
+          "C80A29F7B56DED22306AAFC40C1C90B6FF13EC1F21987452E777D9AF6CCB74F5",
+          "FB06C8E2647670859355C0795A89793FB6561529A2EFACF6B7223F568E0DAD65",
+          "49476E7AE1AC2381B14D4CD6EC0D80FC8DE50946AB336CFE77185D1CBCA3D1FB",
+          "86373BC3A01003E2CD9660CBEEE59096946EA3840D468F1F34536072F0A550B3",
+          "FDF4FFB5043842367A3F3D8DB2AA52C8B0D59E063FBAD18F68D90C7C7F8A7973",
+          "B2B4CAFB86718366C970EA254C481E85EFE5F330D8F701DD23A3E1EE03D9B128",
+          "B9AD3925A2DF98F15582B2CE8EEFF42EFE763601BC03A0F24618DBCCC93D4E71",
+          "4FDBC102068C2A4EEB4549350B6CE69B632DC43D7DDFFC867C75F90B97ECB709",
+          "F715EAD3C8130949C7AFA2A54CF73340922C91CF9B60E7AFC9D68EEC50F242C2",
+          "4EE9CB68BAD1069BBE54103C9FBD957807CDE54A8B4BAC570A9326425D45E7B8",
+          "D7664218CB6C16005265E0F298C79C74A23026031C72F6F9F13DD970A33857CE",
+          "DD170C32E6311F32213C0DEF042BAD8A630D44630AE3994C27CD2865C06D0643",
+          "F143EE361B485AD184BCD9D17F9F1F7E5682966ED5F6691224F05E39AA44EC6F",
+          "053A881CD84E53DE79C46A8DFE25554EBFFAFBC9FC0F7B0946ED2CB49DBB6D1D",
+          "2DA7117979F750E4E93727CA8BF590B5116A0E3812E214A54C36A3AFC46BCCFC",
+          "FD0109B2FAE922BBBE271BA15316C4F9E92D6199140970BDB4A9E92774FF4EE4",
+          "0AD9BAAE00DE197D7D639DAD112A04D28B46DDAFBFD02C47A913851463543F8E",
+          "1EB68CD38327F970ADB4DF77C20D1ACA9848DE90593C2323A4A8DE30FE89D4A1",
+          "67FCE31DE059E41B9C2F1E147DAC9A7B61AD38D9A7468BA58F4B606C43B33AC6",
+          "1B690B84D107EBDA474F036304A2C55E3A23838A96636FB9C754238532151593",
+          "9ACA02EA78F1571ADA4FDAB21BA6133A9A10B07907B0413A1A47823C5020F2AB",
+          "718A63702AFC7D744029836FA6646D11F8ACF4A09F7EB747892F9E4A715A7B79",
+          "3DB760FA8E7EDA168C535F028EF8021B899D6CF1DB70E9D18B9DD76485F90D06",
+          "9AF5539D9AE73BA549890DA7F32BACE14DED0897E3CACE48D3F42F79F98029C9",
+          "CFAB633E112889AC76AB47924B9BB639369C00CBA59B9D9636ED891D30044E36",
+          "75055B09C54F43E92B3F1296CE555BF9B9695E5D83280F77C34D35A5C3489F76",
+          "13F3B5AC9820FFF54D7A78D6DF75B9E000D91A66070366819C16C52210404171",
+          "C52FAFE00F6EBBC5D4B6DCF70DFB7EB2C916281DC8D10A2913F9CBA9A0F0401D",
+          "D99DCFB9721AA64BB0BA7F5A900256339F13102E4D7BB2B6A980557EAACEDA18",
+          "37237D879FCF827F844650F3B64CD3C2AB47F7CF09CB477103334A6CADA77D30",
+          "97E1ADB415FE821CF0E983DE0B73445382041581EF1768C3CFD5AD1AA5A2D397",
+          "12C56B698568A74807F26FAD179588279D2A30035BDCB53899BAE0C3F1E0B476",
+          "D9D52D37F2BB037BA449023179C580C01DED0BD9C3B016F946C2D3B0ED3004CA",
+          "F37375B8C1906FD0E304D2B14D50850FADD4F23AC47EA90C4F048DA9AA870B06",
+          "9158D549F66D6BC5394F8FD2E389B0ECD43B592C44FFED73DB2854E6E5D710F7",
+          "49582001B3119F707098380C60CAB099F0C4BF6AD1893020EC744807C7969989"
+        ]
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "declarant_name"
+            },
+            "metric_name": "column.distinct_values",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1,
+          "parse_strings_as_datetimes": false
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_unique_value_count_to_be_between",
+      "kwargs": {
+        "column": "declarant_name",
+        "max_value": 36,
+        "min_value": 36,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "declarant_name"
+            },
+            "metric_name": "column.distinct_values.count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "declarant_name",
+        "max_value": 0.36,
+        "min_value": 0.36,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "declarant_name"
+            },
+            "metric_name": "column.unique_proportion",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "declarant_patronymic",
+        "mostly": 1.0,
+        "value_set": [
+          "276FE7F5135907B25FD8304E28D6C90D0ADE81DEB9D9BEDC56EACEF16F29BEF4",
+          "84C4BCC258AD51142F8DD2BAB3D8757C4DC271EA932F68C14991B04542702A57",
+          "93271E429C7381F858493070FD357A3D4D86DD54CBB54A765AEA449FB09DD0C5",
+          "5045E19F71103EB46CF756DDE71CB78BAD5659EC65B8712A415D99E4F19C34A1",
+          "AA6493C48D76CE16823C53C5CE5AE29C8F09AD65E62A6BC142946F215C940C82",
+          "CA5E73A0285B5745DEE6BC67DD994AA9DBA6B4488E98C520F6E53C3971297741",
+          "CA9A32445F9992E629E974B048C29599BD6CD0330A53EAFFFB820081545BCBBB",
+          "EA3B1740EAA06AFC71A0BB798B40A7D03B5F6B6B3CD747186A0C23139FAB90FB",
+          "4EE9CB68BAD1069BBE54103C9FBD957807CDE54A8B4BAC570A9326425D45E7B8",
+          "3642A600490C0D78BD4BE8380124B18627B9643D9BEDCB2D21EF1B2875A8A461",
+          "AAC317FFA8D9B84C32D4AC06F6D5F956B1440A5953FFC776744CE2B7E1443C59",
+          "6403798F3C784596ECD85C042848AC389E92538AA4A8B0E21D32FC3B64B16C3D",
+          "E68E1E0F894DD11725240E5C6AF4454D37DC88EFF1ADE3A3BEC6640BC5471EDF",
+          "E955CC5506A4198711DA3244890AFCE9562465D0C6949153AB5909F13B6B728A",
+          "0E95D49F86868FB68FEE243D51974F81B083952E571FC3D39954CD1732CE6A32",
+          "AF0B7C4025DB40F512AEBE28B07614A6414700008896B1FC29D545F5CEAEB996",
+          "6F01D0F24F20A972FD873BE2A0AE3F108804F887F2087210E146CFA3A235EF97",
+          "69CE117300DBE39712BCCCEADE377A1C2BD6E97C7D63D697651BEA1B7A81C0CA"
+        ]
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "declarant_patronymic"
+            },
+            "metric_name": "column.distinct_values",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1,
+          "parse_strings_as_datetimes": false
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_unique_value_count_to_be_between",
+      "kwargs": {
+        "column": "declarant_patronymic",
+        "max_value": 18,
+        "min_value": 18,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "declarant_patronymic"
+            },
+            "metric_name": "column.distinct_values.count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "declarant_patronymic",
+        "max_value": 0.18,
+        "min_value": 0.18,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "declarant_patronymic"
+            },
+            "metric_name": "column.unique_proportion",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "declarant_iin",
+        "mostly": 1.0,
+        "value_set": [
+          "6C2950A6E0336E414D1AA528B8FD143FA453ABF5158351188ECD5F773BBC0E0C",
+          "07EDB3ADBB61366A484AC11BE827F2D59A173AAB647507E99EFB0A51188A28A3",
+          "5B6B52102C8565DEAFAE800E63FEB4A58EDF281367E6071C1AFB5C92CD01B5E1",
+          "F05C5034A24A8B6D10507773EFB5F6180A093C11252789EB6B6DA93BCEBD4C33",
+          "82BE1689A8C327605CE1AB0732AAEFF85E6CB4DDD6841520A3446FD54590AFEB",
+          "366AA0E0DB82790845B7B145AD22E6F0A9583497D44994C224889ABEC4791E09",
+          "BDC611829D06E66F905C9E58F0CAEEAB2ECEFF2001B6EE445F70DA46C6DD4041",
+          "6D4EA24C42B26D8A24052A0F7A65C8A11EC2EE4230DD3755D75409FA114A0530",
+          "4EE9CB68BAD1069BBE54103C9FBD957807CDE54A8B4BAC570A9326425D45E7B8",
+          "3113E9EB97C5D5F2A5BD8BA9199D7BB92F63F82609E23B6917040E5892753584",
+          "9001AE502B1D345E7A857E1F4341164E0BA1C58C2C72E04245E7AF5D8A3B8EEF",
+          "7E1F09EF9ACCFF253ABE0EB2B7156A362203D052BB1959FA6A625C9B69987F36",
+          "E83BBB92ECE52492BC0B8976265E9F615BB65A353C672226C1FF4325A6B70285",
+          "2E5902F3B8D2AE001CE7B9E8BF0C2FAE9B0E2EA307497F3334FCC3CDD1DB1FDE",
+          "428C57A65D6D4AA32D95E80C0D75F28FC04F4080A87D802FE3CA9272C3D2AC9F",
+          "E71579CC41FD1FC69F707FAD0A3E33987E3FB4D67FC186BD89A732CE509BE0B5",
+          "6DBD8BBF61C5E981B541737F7ED78A41483A18830A53E7588CE3BB537D14133C",
+          "67DEF3B9F5E09586430941E42E93FF596CFE23C035E9FA70C4BC84D7543186C9",
+          "66F3D69B46CEDEEAECF5069827D55E8142760FC93005C6B04D1FDE07A58DBEAB",
+          "775DE0E90CE83681B7B66D0B889C77E7E67F8374CCB6475A7D91D3C4ED0FC660",
+          "AD75DA4932189D2DC3A9776FB0C594F27B3EEA8EDB611E3BF9EF34303886E6CD",
+          "C52FAFE00F6EBBC5D4B6DCF70DFB7EB2C916281DC8D10A2913F9CBA9A0F0401D",
+          "7DF9F1559C0CDF36834AD168F3619C4C52088AB2494EAB9AE41CBCA26CA9F346",
+          "85BCB94283F2C01987F6C90F8A6CD4B413659FD2C9F69FA481C52563E7AF2DA9",
+          "E8659872110F1D7700C3813E115F5CF646E99799ACF7F68C6A63064BD28602AE"
+        ]
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "declarant_iin"
+            },
+            "metric_name": "column.distinct_values",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1,
+          "parse_strings_as_datetimes": false
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_unique_value_count_to_be_between",
+      "kwargs": {
+        "column": "declarant_iin",
+        "max_value": 25,
+        "min_value": 25,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "declarant_iin"
+            },
+            "metric_name": "column.distinct_values.count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "declarant_iin",
+        "max_value": 0.25,
+        "min_value": 0.25,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "declarant_iin"
+            },
+            "metric_name": "column.unique_proportion",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "sdu_load_date",
+        "mostly": 1.0,
+        "value_set": [
+          "2024-11-26T11:31:18"
+        ]
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "sdu_load_date"
+            },
+            "metric_name": "column.distinct_values",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1,
+          "parse_strings_as_datetimes": false
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_unique_value_count_to_be_between",
+      "kwargs": {
+        "column": "sdu_load_date",
+        "max_value": 1,
+        "min_value": 1,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "sdu_load_date"
+            },
+            "metric_name": "column.distinct_values.count",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "sdu_load_date",
+        "max_value": 0.01,
+        "min_value": 0.01,
+        "strict_max": false,
+        "strict_min": false
+      },
+      "meta": {
+        "profiler_details": {
+          "metric_configuration": {
+            "domain_kwargs": {
+              "column": "sdu_load_date"
+            },
+            "metric_name": "column.unique_proportion",
+            "metric_value_kwargs": null
+          },
+          "num_batches": 1
+        }
+      }
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "citation_date": "2024-11-26T10:16:19.100876Z",
+        "comment": "Created by effective Rule-Based Profiler of OnboardingDataAssistant with the configuration included.\n"
+      },
+      {
+        "batch_request": {
+          "data_asset_name": "application_table",
+          "data_connector_name": "default_configured_data_connector_name",
+          "datasource_name": "my_clickhouse_datasource",
+          "limit": 1000
+        },
+        "citation_date": "2024-11-26T10:17:19.849145Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.18.22"
+  }
+}

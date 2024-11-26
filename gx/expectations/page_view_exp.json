@@ -1,0 +1,21 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "page_view_exp",
+  "expectations": [],
+  "ge_cloud_id": null,
+  "meta": {
+    "citations": [
+      {
+        "batch_request": {
+          "data_asset_name": "page_views_table",
+          "data_connector_name": "default_configured_data_connector_name",
+          "datasource_name": "my_clickhouse_datasource",
+          "limit": 1000
+        },
+        "citation_date": "2024-11-26T07:14:46.913573Z",
+        "comment": "Created suite added via CLI"
+      }
+    ],
+    "great_expectations_version": "0.18.22"
+  }
+}

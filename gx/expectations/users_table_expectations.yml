@@ -1,0 +1,29 @@
+# This is a simple example of a suite that checks the following:
+# - The `user_id` column contains only integers
+# - The `email` column is unique
+# - The `signup_date` column is within the last 30 days
+expectation_suite_name: users_expect,
+expectations:
+  - expectation_type: expect_column_values_to_be_in_type_list
+    kwargs:
+      column: user_id
+      type_list: ["int64"]
+
+  - expectation_type: expect_column_values_to_be_in_set
+    kwargs:
+      column: email
+      value_set: 
+        - "user1@example.com"
+        - "user2@example.com"
+
+  - expectation_type: expect_column_values_to_be_in_type_list
+    kwargs:
+      column: signup_date
+      type_list: ["datetime64[ns]"]
+
+  - expectation_type: expect_column_values_to_be_in_set
+    kwargs:
+      column: signup_date
+      value_set:  # Date range can be checked programmatically in custom expectations
+        - "2024-11-01"
+        - "2024-11-26"
